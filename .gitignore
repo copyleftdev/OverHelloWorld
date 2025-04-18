@@ -1,0 +1,45 @@
+# Binaries
+/server
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output and build folders
+/build/
+/dist/
+/bin/
+
+# Dependency directories
+/vendor/
+node_modules/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+.DS_Store
+*.log
+
+# OS files
+Thumbs.db
+
+# Test/coverage artifacts
+*.out
+*.coverprofile
+coverage/
+
+# Docker artifacts
+*.pid
+docker-compose.override.yml
+
+# Misc
+.env
+.env.*
+*.local
+*.tmp
+*.cache
+*.lock
