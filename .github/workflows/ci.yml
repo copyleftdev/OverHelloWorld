@@ -20,7 +20,9 @@ jobs:
       - name: Test
         run: go test ./...
       - name: Docker Compose
-        run: docker-compose up -d redis
+        run: |
+          sudo apt-get update && sudo apt-get install -y docker-compose
+          docker-compose up -d redis
       - name: Load Test
         run: |
           sudo apt-get update && sudo apt-get install -y k6
