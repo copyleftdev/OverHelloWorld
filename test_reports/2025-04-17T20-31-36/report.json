@@ -1,0 +1,31 @@
+{"ImportPath":"overhelloworld/tests/integration [overhelloworld/tests/integration.test]","Action":"build-output","Output":"# overhelloworld/tests/integration [overhelloworld/tests/integration.test]\n"}
+{"ImportPath":"overhelloworld/tests/integration [overhelloworld/tests/integration.test]","Action":"build-output","Output":"tests/integration/property_redis_test.go:13:2: \"github.com/go-redis/redis/v8\" imported as redis and not used\n"}
+{"ImportPath":"overhelloworld/tests/integration [overhelloworld/tests/integration.test]","Action":"build-output","Output":"tests/integration/property_redis_test.go:29:15: undefined: app.NewRedisEventBus\n"}
+{"ImportPath":"overhelloworld/tests/integration [overhelloworld/tests/integration.test]","Action":"build-fail"}
+{"Time":"2025-04-17T20:31:37.059690167-07:00","Action":"start","Package":"overhelloworld/cmd/server"}
+{"Time":"2025-04-17T20:31:37.05978795-07:00","Action":"start","Package":"overhelloworld/internal/api"}
+{"Time":"2025-04-17T20:31:37.059854123-07:00","Action":"start","Package":"overhelloworld/internal/app"}
+{"Time":"2025-04-17T20:31:37.059901794-07:00","Action":"start","Package":"overhelloworld/internal/domain"}
+{"Time":"2025-04-17T20:31:37.059956536-07:00","Action":"start","Package":"overhelloworld/internal/readmodel"}
+{"Time":"2025-04-17T20:31:37.06007539-07:00","Action":"start","Package":"overhelloworld/tests/integration"}
+{"Time":"2025-04-17T20:31:37.060122472-07:00","Action":"output","Package":"overhelloworld/tests/integration","Output":"FAIL\toverhelloworld/tests/integration [build failed]\n"}
+{"Time":"2025-04-17T20:31:37.060150013-07:00","Action":"fail","Package":"overhelloworld/tests/integration","Elapsed":0,"FailedBuild":"overhelloworld/tests/integration [overhelloworld/tests/integration.test]"}
+{"Time":"2025-04-17T20:31:37.062335529-07:00","Action":"output","Package":"overhelloworld/internal/api","Output":"\toverhelloworld/internal/api\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2025-04-17T20:31:37.062616289-07:00","Action":"output","Package":"overhelloworld/internal/app","Output":"\toverhelloworld/internal/app\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2025-04-17T20:31:37.062678951-07:00","Action":"output","Package":"overhelloworld/cmd/server","Output":"\toverhelloworld/cmd/server\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2025-04-17T20:31:37.062672791-07:00","Action":"output","Package":"overhelloworld/internal/domain","Output":"\toverhelloworld/internal/domain\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2025-04-17T20:31:37.062673911-07:00","Action":"output","Package":"overhelloworld/internal/readmodel","Output":"\toverhelloworld/internal/readmodel\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2025-04-17T20:31:37.064917569-07:00","Action":"pass","Package":"overhelloworld/internal/app","Elapsed":0.005}
+{"Time":"2025-04-17T20:31:37.065034633-07:00","Action":"pass","Package":"overhelloworld/internal/api","Elapsed":0.005}
+{"Time":"2025-04-17T20:31:37.065100736-07:00","Action":"pass","Package":"overhelloworld/internal/readmodel","Elapsed":0.005}
+{"Time":"2025-04-17T20:31:37.065164918-07:00","Action":"pass","Package":"overhelloworld/internal/domain","Elapsed":0.005}
+{"Time":"2025-04-17T20:31:37.065196889-07:00","Action":"pass","Package":"overhelloworld/cmd/server","Elapsed":0.006}
+{"Time":"2025-04-17T20:31:37.248146622-07:00","Action":"start","Package":"overhelloworld/tests/unit"}
+{"Time":"2025-04-17T20:31:37.252275296-07:00","Action":"run","Package":"overhelloworld/tests/unit","Test":"TestHelloCommandHandler_PublishesEvent"}
+{"Time":"2025-04-17T20:31:37.252322678-07:00","Action":"output","Package":"overhelloworld/tests/unit","Test":"TestHelloCommandHandler_PublishesEvent","Output":"=== RUN   TestHelloCommandHandler_PublishesEvent\n"}
+{"Time":"2025-04-17T20:31:37.252345558-07:00","Action":"output","Package":"overhelloworld/tests/unit","Test":"TestHelloCommandHandler_PublishesEvent","Output":"--- PASS: TestHelloCommandHandler_PublishesEvent (0.00s)\n"}
+{"Time":"2025-04-17T20:31:37.252355799-07:00","Action":"pass","Package":"overhelloworld/tests/unit","Test":"TestHelloCommandHandler_PublishesEvent","Elapsed":0}
+{"Time":"2025-04-17T20:31:37.252372249-07:00","Action":"output","Package":"overhelloworld/tests/unit","Output":"PASS\n"}
+{"Time":"2025-04-17T20:31:37.25267776-07:00","Action":"output","Package":"overhelloworld/tests/unit","Output":"coverage: [no statements]\n"}
+{"Time":"2025-04-17T20:31:37.253869302-07:00","Action":"output","Package":"overhelloworld/tests/unit","Output":"ok  \toverhelloworld/tests/unit\t0.005s\tcoverage: [no statements]\n"}
+{"Time":"2025-04-17T20:31:37.253890752-07:00","Action":"pass","Package":"overhelloworld/tests/unit","Elapsed":0.006}

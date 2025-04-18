@@ -1,0 +1,11 @@
+server:
+  port: 8080
+redis:
+  addr: redis:6379
+  db: 0
+  password: ""
+plugins:
+  enabled:
+    - ascii
+    - tts
+    - led

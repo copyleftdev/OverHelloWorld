@@ -1,0 +1,38 @@
+project: OverHelloWorld
+description: >
+  A full DDD-based event-sourced Hello World app written in Go,
+  featuring CQRS, Redis pub/sub, plugin renderers, containerization,
+  and full CI pipeline. This project is intentionally over-engineered.
+language: go
+entrypoint: cmd/server/main.go
+tests:
+  unit: tests/unit/
+  integration: tests/integration/
+  load: tests/load/
+docker:
+  dockerfile: Dockerfile
+  composefile: docker-compose.yml
+ci:
+  github: .github/workflows/ci.yml
+observability:
+  tracing: opentelemetry
+  metrics: prometheus
+  logs: zerolog
+plugins:
+  - ascii
+  - tts
+  - led
+infra:
+  redis:
+    type: pubsub
+    docker_image: redis:alpine
+loadtest:
+  tool: k6
+  script: tests/load/hello-load-test.js
+hooks:
+  post-generate:
+    - go mod tidy
+    - go build ./cmd/server
+    - docker-compose up -d redis
+    - go test ./...
+    - k6 run tests/load/hello-load-test.js
