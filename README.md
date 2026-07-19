@@ -1,5 +1,7 @@
 # OverHelloWorld
 
+[![Tip my tokens](https://tokentip.to/badge/copyleftdev.svg?logo=1)](https://tokentip.to/@copyleftdev)
+
 A robust, over-engineered "Hello World" Go application demonstrating:
 - DDD, CQRS, and event sourcing
 - Redis and file-backed event bus
